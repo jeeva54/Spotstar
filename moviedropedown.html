@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function next(){
+            let choice=document.getElementById("social").value;
+            if(choice=="Tamil"){
+                window.location.href="./image.html";
+            }
+            else if(choice=="English"){
+                window.location.href="./english movie.html";
+            }
+            else if(choice=="Malayalam"){
+                window.location.href="./malayalam movie.html";
+            }
+            else if(choice=="Hindi"){
+                window.location.href="./hindi movie.html";
+            }
+        }
+    </script>
+
+    <style>
+
+        body{ 
+            background-color: black;
+        }
+        #a1{
+            margin-left: 550px;
+        }
+        h3{
+            color: white;
+        }
+        #m1{
+            background: linear-gradient(pink,blue,green);
+        border: 1px black solid;
+        border-radius: 10px;
+        }
+        #h1{
+            display: inline-block;
+                outline: 0;
+                border: 0;
+                cursor: pointer;
+                will-change: box-shadow,transform;
+                background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #09eb4d 100% );
+                box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);
+                padding: 0 32px;
+                border-radius: 6px;
+                color: #fff;
+                height: 30px;
+                font-size: 18px;
+                text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+                transition: box-shadow 0.15s ease,transform 0.15s ease;
+        }
+        #h1:hover{
+            box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #3c4fe0;
+                    transform: translateY(-2px);
+
+        }
+        #h1:active{
+            box-shadow: inset 0px 3px 7px #030938;
+                    transform: translateY(2px);
+
+        }
+        Select{
+            color: #7a5050;
+            text-align: center;
+            width: 100px;
+            height: 25px;
+            border: 1px black solid;
+            border-radius: 10px;
+            background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #09eb4d 100% );
+                box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);
+
+        }
+        #k1{
+            display: inline-block;
+                outline: 0;
+                border: 0;
+                cursor: pointer;
+                will-change: box-shadow,transform;
+                background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #09eb4d 100% );
+                box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);
+                padding: 0 32px;
+                border-radius: 6px;
+                color: #fff;
+                height: 30px;
+                font-size: 18px;
+                text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+                transition: box-shadow 0.15s ease,transform 0.15s ease; 
+            }
+            #k1:hover{
+                box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #3c4fe0;
+                    transform: translateY(-2px);
+
+            }
+            #k1:active{
+                box-shadow: inset 0px 3px 7px #3c4fe0;
+                    transform: translateY(2px);
+
+            }
+        img{
+            
+            transition: 1s ease;
+        }
+        img:hover{
+            -webkit-transform: rotateZ(-10deg);
+-ms-transform: rotateZ(-5deg);
+transform: rotateZ(-5deg);
+transition: 1s ease;
+        }
+
+    </style>
+    
+</head>
+<body >
+<a href="./music.html"><button id="h1">Music</button></a>
+<a href="./home.html"> <button id="h1">Home</button></a>
+<label ><h3 id="h3">Choose any language</h3></label>
+<table>
+<td>
+</td>
+<Select name="" id="social">
+<option>Tamil</option>
+<option>English </option>
+<option>Hindi </option>
+<option>Malayalam </option>
+</Select><br><br>
+<button id="k1" onclick="next()">ok</button>
+</table>
+<div id="a1">
+
+
+<h1 style="color:white; padding-left: 100px;">***TRENDING MOVIES***</h1>
+<a href="./leo.html">  <img src="./LeoTM.jpg" alt="" width="200px" height="250"></a>
+<a href="./avatar.html"> <img src="./Avatar.jpg" alt="" width="200px" height="250"></a>
+<a href="./jawan.html"> <img src="./jawan.jpg" alt="" width="200px" height="250"></a>
+<br>
+<div id="a2">
+<a href="./arm.html"> <img src="./ARM.jpg" alt="" width="200px" height="250"></a>
+<a href="./kantara.html"> <img src="./kantaramovie.jpg" alt="" width="200px" height="250"></a>
+<a href="./padmavati.html"> <img src="./padmavati.jpg" alt="" width="200px" height="250"></a>
+</div>
+</body>
+</html>
